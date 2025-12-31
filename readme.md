@@ -19,43 +19,26 @@ If you are working with a local device and its IP address is not fixed, this too
 * Takes a **base IP address**
 * Iterates over a range of IPs (e.g. `.1` to `.20`)
 * Tries to connect to a given **port**
-* Prints which IPs are **reachable (active)** and which are not
+* Prints which IPs are **reachable (active)** and *ignore* which are not.
 
 ---
 
 ### 🧩 Example Use Case
 
-```text
-[CLOSED] 192.168.1.5:9090
-[CLOSED] 192.168.1.6:9090
-[CLOSED] 192.168.1.7:9090
-[CLOSED] 192.168.1.8:9090
-[CLOSED] 192.168.1.9:9090
-[CLOSED] 192.168.1.10:9090
-[CLOSED] 192.168.1.11:9090
-[CLOSED] 192.168.1.12:9090
-[CLOSED] 192.168.1.13:9090
-> [OPEN] 192.168.1.14:9090
-[CLOSED] 192.168.1.15:9090
-[CLOSED] 192.168.1.16:9090
-[CLOSED] 192.168.1.17:9090
-```
+\> [OPEN] - 192.168.1.14:80
+\> [OPEN] - 192.168.1.14:80
+
 ---
 
 ## ▶️ Run the Script
 
 ```bash
-python open_port_checker.py
+python activeip.py
 ```
 
 Or if arguments are supported:
 
 ```bash
-python open_port_checker.py 192.168.1 20 9090
+python activeip.py 192.168.1.1 20 80
 ```
-
----
-
-
-
 ---
