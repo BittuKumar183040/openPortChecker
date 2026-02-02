@@ -18,6 +18,8 @@ def scan_ip_range(base_ip, start, count, port):
         ip = f"{base}.{i}"
         if is_port_open(ip, port):
             print(f"-> [OPEN] {ip}:{port}")
+        else:
+            print(f"[CLOSE] {ip}:{port}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scan IP range for open port")
