@@ -50,5 +50,5 @@ Update main.py to enable runtime argument
 #### is_package = True
 
 ```bash
-pyinstaller --onefile --icon=icon.ico --name activeiport .\activeip.py
+pyinstaller --onefile --icon=icon.ico --name activeiport .\main.py
 ```
