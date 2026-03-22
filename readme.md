@@ -25,21 +25,21 @@ If you are working with a local device and its IP address is not fixed, this too
 
 ### 🧩 Example Use Case
 
-\> [OPEN] - 192.168.1.14:80
-\> [OPEN] - 192.168.1.14:80
+-> [OPEN] - 192.168.1.14:80</br>
+-> [OPEN] - 192.168.1.14:80
 
 ---
 
 ## ▶️ Run the Script
 
 ```bash
-python activeip.py
+python main.py
 ```
 
 Or if arguments are supported:
 
 ```bash
-python activeip.py 192.168.1.1 20 80
+python main.py 192.168.1.1 20 80
 ```
 ---
 

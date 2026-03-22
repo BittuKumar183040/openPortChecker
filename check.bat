@@ -1,4 +1,4 @@
-python activeip.py
+python main.py
 ECHO Press any key to exit.
 PAUSE >NUL
 
