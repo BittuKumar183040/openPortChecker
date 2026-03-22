@@ -42,3 +42,13 @@ Or if arguments are supported:
 python activeip.py 192.168.1.1 20 80
 ```
 ---
+
+## Build Executable
+
+Update main.py to enable runtime argument
+
+#### is_package = True
+
+```bash
+pyinstaller --onefile --icon=icon.ico --name activeiport .\activeip.py
+```
